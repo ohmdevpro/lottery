@@ -7,7 +7,8 @@ const app = express();
 
 // Enable CORS for the specified origin
 app.use(cors({
-  origin: 'https://p1n3r3n.vercel.app'
+  origin: ["https://p1n3r3n.vercel.app"],
+  methods: ["POST"]
 }));
 
 // Use bodyParser middleware to parse JSON
