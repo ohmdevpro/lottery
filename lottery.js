@@ -6,10 +6,7 @@ const axios = require('axios');
 const app = express();
 
 // Enable CORS for the specified origin
-app.use(cors({
-  origin: ["https://p1n3r3n.vercel.app"],
-  methods: ["POST"]
-}));
+app.use(cors());
 
 // Use bodyParser middleware to parse JSON
 app.use(bodyParser.json());
